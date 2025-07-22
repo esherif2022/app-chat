@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pidima Chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="toggle-chat">💬 Chat</button>
+
+    <div class="chat-container hidden" id="chat-box">
+      <div class="chat-header">
+        Chat with Pidima AI
+        <button id="theme-toggle">🌙</button>
+      </div>
+
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="typing-indicator" id="typing-indicator">
+        Pidima is typing...
+      </div>
+
+      <form id="chat-form">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Type a message..."
+          autocomplete="off"
+        />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
